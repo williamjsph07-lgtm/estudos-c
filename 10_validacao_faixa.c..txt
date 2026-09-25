@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    do {
+        printf("Digite um numero entre 1 e 100: ");
+        scanf("%d", &numero);
+
+        if (numero < 1 || numero > 100) {
+            printf("Valor invalido! Tente novamente.\n");
+        }
+
+    } while (numero < 1 || numero > 100);
+
+    printf("Valor valido: %d\n", numero);
+
+    return 0;
+}
